@@ -86,6 +86,11 @@ export default async function Home() {
                 <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 truncate">Clinical Partner</p>
                 <p className="text-xs sm:text-sm font-bold text-[#122336] truncate">Oracle Eye Hospital</p>
                 <p className="text-[10px] sm:text-[11px] text-slate-500 truncate">Moradabad, UP</p>
+                <p className="text-[10px] sm:text-[11px] text-blue-600 underline truncate">
+                  <Link href="/our-works/oracle-eye-hospital">
+                    View Details
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

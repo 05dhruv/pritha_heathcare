@@ -16,12 +16,12 @@ const EMAILJS_CONFIG = {
 const UPI_ID = "pritha@indianbk";
 const PAYEE_NAME = "Pratha Healthcare";
 const PRESETS = [500, 1000, 2500, 5000];
-const CAUSES = ["Eye Care", "Artificial Limbs", "Special Education"];
+const CAUSES = ["For Cataract Surgery", "Eye Camp", "Tabacco Suggestion Awareness Program","Orale Cancer Patient Realization","Artificial Limbs", "For Education To Child"];
 
 export default function Donate() {
   const [amount, setAmount] = useState(1000);
   const [form, setForm] = useState({ name: "", email: "", phone: "", pan: "" });
-  const [cause, setCause] = useState("Eye Care");
+  const [cause, setCause] = useState("For Cataract Surgery");
   const [errors, setErrors] = useState({});
 
   // Payment popup & progress states

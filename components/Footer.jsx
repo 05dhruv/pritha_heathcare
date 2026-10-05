@@ -67,9 +67,32 @@ export default function Footer() {
             </div>
 
             <div className="mt-6 pt-5 border-t border-slate-800">
-              <p className="text-xs text-slate-400">
-                Associated Clinical Partner: <strong className="text-slate-200">Oracle Eye Hospital, Moradabad</strong>
-              </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="text-xs sm:text-sm text-slate-300">
+                  Associated With Oracle Eye Hospital, Moradabad, Uttar Pradesh
+                </span>
+                <a
+                  href="https://oracleeyehospital.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block transition-all hover:scale-105 hover:opacity-80"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dv9tivfvq/image/upload/v1791185243/IMG_20261005_125549_fulyke.png"
+                    className="h-10 w-auto object-contain"
+                  />
+                </a>
+              </div>
+              <div className="mt-1.5">
+                <a
+                  href="https://oracleeyehospital.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-[#c54b8c] hover:underline transition-all"
+                >
+                  Our Trusted Healthcare Partner
+                </a>
+              </div>
             </div>
           </div>
 
@@ -87,7 +110,7 @@ export default function Footer() {
                   className="hover:text-white hover:translate-x-1 transition inline-flex items-center gap-2 group"
                 >
                   <span className="text-red-500 font-bold group-hover:text-red-400">&rsaquo;</span>
-                  <span>Eye Surgery</span>
+                  <span>Cataract Surgery</span>
                 </Link>
               </li>
               <li>
@@ -110,11 +133,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/our-works/general-health-checkup"
+                  href="/our-works/tobacco-awareness"
                   className="hover:text-white hover:translate-x-1 transition inline-flex items-center gap-2 group"
                 >
                   <span className="text-red-500 font-bold group-hover:text-red-400">&rsaquo;</span>
-                  <span>Health Check-up Camps</span>
+                  <span>Tabacco Suggestion Awareness Program</span>
                 </Link>
               </li>
 
@@ -124,18 +147,10 @@ export default function Footer() {
                   className="hover:text-white hover:translate-x-1 transition inline-flex items-center gap-2 group"
                 >
                   <span className="text-red-500 font-bold group-hover:text-red-400">&rsaquo;</span>
-                  <span>Cancer Screening</span>
+                  <span>Orale Cancer Patient Realization</span>
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/our-works/tobacco-awareness"
-                  className="hover:text-white hover:translate-x-1 transition inline-flex items-center gap-2 group"
-                >
-                  <span className="text-red-500 font-bold group-hover:text-red-400">&rsaquo;</span>
-                  <span>Tobacco Awareness</span>
-                </Link>
-              </li>
+
               <li>
                 <Link
                   href="/our-works/health-talks-webinars"
@@ -356,7 +371,7 @@ export default function Footer() {
 
         {/* WhatsApp Chat */}
         <a
-          href={`https://wa.me/${(site.phone2 || "917900351111").replace(/[^0-9]/g, "")}`}
+          href={`https://wa.me/${(site.phone2 || "919012403111").replace(/[^0-9]/g, "")}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs font-bold shadow-md transition"
@@ -379,7 +394,7 @@ export default function Footer() {
       {/* Floating Desktop WhatsApp & Back To Top */}
       <div className="hidden sm:flex fixed bottom-6 right-6 z-40 flex-col items-center gap-2.5">
         <a
-          href={`https://wa.me/${(site.phone2 || "917900351111").replace(/[^0-9]/g, "")}`}
+          href={`https://wa.me/${(site.phone2 || "919012403111").replace(/[^0-9]/g, "")}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Chat on WhatsApp"
