@@ -12,6 +12,7 @@ import HeroSlider from "@/components/HeroSlider";
 import QuickImpactBar from "@/components/QuickImpactBar";
 import MilestonesSection from "@/components/MilestonesSection";
 import Photo from "@/components/Photo";
+import CorePillarsCarousel from "@/components/CorePillarsCarousel";
 
 export const dynamic = "force-dynamic";
 
@@ -114,176 +115,8 @@ export default async function Home() {
             </p>
           </div>
 
-          {/* 3 Core Healthcare Pillars */}
-          <div className="mt-14 grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 items-stretch">
-            {/* Pillar 1: Eye Care */}
-            <div
-              className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div>
-                <div className="h-52 w-full rounded-2xl overflow-hidden shadow-inner border border-slate-200 mb-5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/hero_eyecare.jpg"
-                    alt="Eye Care Examination"
-                    className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
-                  />
-                </div>
-
-                <div className="flex items-center justify-between gap-3 mb-3">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200/60">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                    4,200+ Free Surgeries Done
-                  </span>
-                  <span className="text-2xl">👁️</span>
-                </div>
-
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-[#122336] group-hover:text-[#dc2626] transition">
-                  Comprehensive Eye Care
-                </h3>
-
-                <p className="mt-2 text-sm text-slate-600 font-body leading-relaxed">
-                  Aiming to eradicate avoidable blindness by providing free microsurgical cataract interventions, cornea transplants, retinal screenings, and free prescription glasses.
-                </p>
-
-                <div className="mt-4 space-y-1.5 text-xs sm:text-sm font-medium text-slate-700">
-                  <div className="flex items-center gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span> Free Micro-Incision Cataract Surgery
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span> Intraocular Lens (IOL) Implants
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span> Village Eye Screening Camps
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
-                <Link
-                  href="/eyecare"
-                  className="inline-flex items-center gap-2 font-bold text-sm text-[#dc2626] hover:text-[#b91c1c] transition"
-                >
-                  <span>Explore Eye Care Mission</span>
-                  <span className="text-lg leading-none">&rarr;</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Pillar 2: Disability Care & Prosthetics */}
-            <div
-              className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div>
-                <div className="h-52 w-full rounded-2xl overflow-hidden shadow-inner border border-slate-200 mb-5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/hero_disability.jpg"
-                    alt="Prosthetics and Mobility"
-                    className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
-                  />
-                </div>
-
-                <div className="flex items-center justify-between gap-3 mb-3">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200/60">
-                    <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-                    11,000+ Mobility Aids
-                  </span>
-                  <span className="text-2xl">🦾</span>
-                </div>
-
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-[#122336] group-hover:text-[#dc2626] transition">
-                  Artificial Limbs &amp; Rehabilitation
-                </h3>
-
-                <p className="mt-2 text-sm text-slate-600 font-body leading-relaxed">
-                  Manufacturing custom-fit lightweight prosthetics, calipers, tricycles and assistive mobility aids to help amputees regain movement and earn dignified livelihoods.
-                </p>
-
-                <div className="mt-4 space-y-1.5 text-xs sm:text-sm font-medium text-slate-700">
-                  <div className="flex items-center gap-2">
-                    <span className="text-blue-600 font-bold">✓</span> Custom Modular Prosthetic Fitting
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-blue-600 font-bold">✓</span> Wheelchairs &amp; Tricycles Distribution
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-blue-600 font-bold">✓</span> Post-Fitting Physiotherapy Support
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
-                <Link
-                  href="/disability-care"
-                  className="inline-flex items-center gap-2 font-bold text-sm text-[#dc2626] hover:text-[#b91c1c] transition"
-                >
-                  <span>Rehabilitation Center</span>
-                  <span className="text-lg leading-none">&rarr;</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Pillar 3: Rural Outreach Mobile Medical Clinics */}
-            <div
-              className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div>
-                <div className="h-52 w-full rounded-2xl overflow-hidden shadow-inner border border-slate-200 mb-5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/hero_rural_clinic.jpg"
-                    alt="Rural Mobile Health Clinic"
-                    className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
-                  />
-                </div>
-
-                <div className="flex items-center justify-between gap-3 mb-3">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-bold border border-purple-200/60">
-                    <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
-                    325+ Rural Health Camps
-                  </span>
-                  <span className="text-2xl">🚑</span>
-                </div>
-
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-[#122336] group-hover:text-[#dc2626] transition">
-                  Rural Mobile Medical Clinics
-                </h3>
-
-                <p className="mt-2 text-sm text-slate-600 font-body leading-relaxed">
-                  Custom-equipped mobile health vans taking doctors, diagnostic testing equipment, free medicines, cancer screenings, and dental checkups directly to remote villages.
-                </p>
-
-                <div className="mt-4 space-y-1.5 text-xs sm:text-sm font-medium text-slate-700">
-                  <div className="flex items-center gap-2">
-                    <span className="text-purple-600 font-bold">✓</span> Doorstep Doctor &amp; Nursing Consultations
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-purple-600 font-bold">✓</span> Free Diagnostics &amp; Essential Medicines
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-purple-600 font-bold">✓</span> Oral Cancer &amp; Chronic Health Screenings
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
-                <Link
-                  href="/outreach-services"
-                  className="inline-flex items-center gap-2 font-bold text-sm text-[#dc2626] hover:text-[#b91c1c] transition"
-                >
-                  <span>Explore Rural Health Van</span>
-                  <span className="text-lg leading-none">&rarr;</span>
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/* Core Healthcare Pillars Carousel (Embla Swiper with 5 initiatives & hover pause/resume) */}
+          <CorePillarsCarousel />
         </div>
       </section>
 
@@ -406,13 +239,13 @@ export default async function Home() {
             <div className="mx-auto mt-4 h-1 w-24 bg-[#dc2626] rounded-full" />
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {endeavors.map((e, idx) => (
               <Link
                 key={e.title}
                 href={e.href}
                 data-aos="zoom-in"
-                data-aos-delay={(idx % 3) * 150}
+                data-aos-delay={(idx % 4) * 100}
                 className="group relative block overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200"
               >
                 <div className="h-64 w-full overflow-hidden bg-slate-100">
@@ -422,9 +255,9 @@ export default async function Home() {
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#122336]/90 via-[#122336]/30 to-transparent flex items-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#122336]/95 via-[#122336]/40 to-transparent flex items-end p-5">
                   <div>
-                    <h3 className="text-white font-display text-xl font-bold">
+                    <h3 className="text-white font-display text-lg sm:text-xl font-bold leading-tight">
                       {e.title}
                     </h3>
                     <span className="text-xs text-red-400 font-semibold inline-flex items-center gap-1 mt-1 group-hover:text-red-300 transition">
@@ -434,33 +267,6 @@ export default async function Home() {
                 </div>
               </Link>
             ))}
-
-            {/* Additional Project Card: Rural Outreach */}
-            <Link
-              href="/our-works"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-              className="group relative block overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200"
-            >
-              <div className="h-64 w-full overflow-hidden bg-slate-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/hero_rural_clinic.jpg"
-                  alt="Rural Outreach Program"
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#122336]/90 via-[#122336]/30 to-transparent flex items-end p-5">
-                <div>
-                  <h3 className="text-white font-display text-xl font-bold">
-                    Community Works &amp; Health Camps
-                  </h3>
-                  <span className="text-xs text-red-400 font-semibold inline-flex items-center gap-1 mt-1 group-hover:text-red-300 transition">
-                    Explore 325+ Camps &rarr;
-                  </span>
-                </div>
-              </div>
-            </Link>
           </div>
         </div>
       </section>

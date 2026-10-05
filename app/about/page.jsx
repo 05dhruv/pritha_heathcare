@@ -1,5 +1,4 @@
 import PageBanner from "@/components/PageBanner";
-import CompanyInformation from "@/components/CompanyInformation";
 import PyramidalModelSection from "@/components/PyramidalModelSection";
 import { objectives, site } from "@/lib/site";
 import Link from "next/link";
@@ -43,6 +42,28 @@ const teamMembers = [
     initials: "MS",
     bio: "Dr. Megha Srivastava holds an MDS in Oral & Maxillofacial Radiology combined with an MBA in Healthcare Services. She completed her specialized Fellowship in Forensic Odontology from Dharwad, Karnataka. She is also a recognized member of the Indian Association of Palliative Care (IAPC), guiding trust clinical operations with compassionate palliative care.",
     highlights: ["MDS Maxillofacial Radiology", "MBA in Healthcare Services", "Indian Association of Palliative Care Member"],
+  },
+    {
+    name: "Dr. Amit Saxena",
+    role: "Consultant Physiotherapist & Rehabilitation Specialist",
+    qualification: "B.P.T. • M.P.T. (Neurology) • M.I.A.P.",
+    badge: "Physiotherapy & Rehabilitation",
+    badgeColor: "bg-cyan-50 text-cyan-700 border-cyan-200",
+    avatarBg: "bg-cyan-100 text-cyan-700",
+    initials: "AS",
+    bio: "Dr. Amit Saxena is a Consultant Physiotherapist specializing in Brain & Spinal Rehabilitation. With expertise in neurological physiotherapy and rehabilitation, he focuses on helping patients improve mobility, strength, coordination, and functional independence through personalized physiotherapy and rehabilitation programs.",
+    highlights: ["B.P.T. (Bachelor of Physiotherapy)", "M.P.T. (Neurology) • M.I.A.P.", "Brain & Spinal Rehabilitation Specialist"],
+  },
+    {
+    name: "Mr. K.P. Yadav",
+    role: "Marketing Head & Outreach Specialist",
+    qualification: "Marketing & Community Outreach",
+    badge: "Marketing & Outreach",
+    badgeColor: "bg-orange-50 text-orange-700 border-orange-200",
+    avatarBg: "bg-orange-100 text-orange-700",
+    initials: "KY",
+    bio: "Mr. K.P. Yadav leads marketing, community outreach, and promotional initiatives, with a focus on strengthening public engagement and expanding the reach of healthcare and rural outreach programs. He coordinates marketing strategies, awareness campaigns, and field-level outreach activities to ensure effective communication and wider community participation.",
+    highlights: ["Marketing Strategy & Management", "Community Engagement & Awareness", "Campaign Planning & Coordination"],
   },
   {
     name: "Mrs. Usha Srivastava",
@@ -230,9 +251,6 @@ export default function About() {
             ))}
           </div>
         </div>
-
-        {/* 6. Legal & Corporate Compliance */}
-        <CompanyInformation />
 
         {/* 7. Guiding Charter Objectives */}
         <div data-aos="fade-up" className="mt-16 rounded-2xl bg-[#f8fafc] border border-slate-200 p-6 sm:p-8">

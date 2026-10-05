@@ -25,8 +25,16 @@ export const metadata = {
   openGraph: {
     title: `${site.name} - The Breath of Life`,
     description: site.description,
+    url: site.url,
+    siteName: site.name,
     type: "website",
     images: [{ url: "/images/logo.jpg", width: 800, height: 800, alt: "Pritha Health Care Logo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} - The Breath of Life`,
+    description: site.description,
+    images: ["/images/logo.jpg"],
   },
 };
 
