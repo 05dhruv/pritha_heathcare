@@ -77,10 +77,6 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="inline-block transition-all hover:scale-105 hover:opacity-80"
                 >
-                  <img
-                    src="https://res.cloudinary.com/dv9tivfvq/image/upload/v1791185243/IMG_20261005_125549_fulyke.png"
-                    className="h-10 w-auto object-contain"
-                  />
                 </a>
               </div>
               <div className="mt-1.5">
