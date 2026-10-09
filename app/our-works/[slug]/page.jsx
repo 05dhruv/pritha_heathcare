@@ -1,8 +1,10 @@
 import PageBanner from "@/components/PageBanner";
+import PhotoGrid from "@/components/PhotoGrid";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { worksData } from "../../../data/works";
 import { workItemsData } from "../../../data/workItems";
+import { pageGalleries } from "../../../data/pageGalleries";
 
 // Combine both datasets for static generation
 export async function generateStaticParams() {
@@ -93,8 +95,15 @@ export default function WorkDetailsPage({ params }) {
     });
   }
 
-  // Gallery
-  sidebarItems.push({ id: "gallery", label: "Gallery", isSubItem: false });
+  // Gallery (either custom page gallery or data.gallery)
+  const pageGallery = pageGalleries[params.slug];
+  if (pageGallery || (data.gallery && data.gallery.length > 0)) {
+    sidebarItems.push({
+      id: "photos",
+      label: pageGallery ? pageGallery.heading : "Gallery",
+      isSubItem: false,
+    });
+  }
 
   if (data.faqs && data.faqs.length > 0) {
     sidebarItems.push({
@@ -450,12 +459,19 @@ export default function WorkDetailsPage({ params }) {
                 </div>
               )}
 
-              {/* Gallery */}
-              {data.gallery && data.gallery.length > 0 && (
-                <div className="mb-8">
+              {/* Photo Section / Gallery */}
+              {pageGallery ? (
+                <PhotoGrid
+                  sectionId="photos"
+                  photos={pageGallery.photos}
+                  heading={pageGallery.heading}
+                  subheading={pageGallery.subheading}
+                />
+              ) : data.gallery && data.gallery.length > 0 ? (
+                <div id="photos" className="mb-8 scroll-mt-28">
                   <h3
                     id="gallery"
-                    className="font-display font-bold text-lg text-[#122336] uppercase tracking-wide mb-4 scroll-mt-28"
+                    className="font-display font-bold text-lg text-[#122336] uppercase tracking-wide mb-4"
                   >
                     Gallery
                   </h3>
@@ -470,7 +486,7 @@ export default function WorkDetailsPage({ params }) {
                     ))}
                   </div>
                 </div>
-              )}
+              ) : null}
 
               {/* FAQs */}
               {data.faqs && data.faqs.length > 0 && (
@@ -520,8 +536,8 @@ export default function WorkDetailsPage({ params }) {
             </article>
 
             {/* Sticky Sidebar dynamically driven by page content */}
-            <div className="order-first lg:order-last lg:self-stretch w-full lg:w-80 flex-shrink-0 lg:ml-auto">
-              <aside className="lg:sticky lg:top-28">
+            <div className="order-first lg:order-last w-full lg:w-80 flex-shrink-0 lg:ml-auto lg:self-start lg:sticky lg:top-28 z-20">
+              <aside>
                 <div className="rounded-xl border border-slate-200 bg-white shadow-md overflow-hidden">
                   <div className="bg-[#122336] px-5 py-4">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-[#dc2626] block mb-1">
