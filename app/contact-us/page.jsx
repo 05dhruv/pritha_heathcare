@@ -24,7 +24,7 @@ export default function Contact() {
           <p className="text-slate-600 text-sm leading-relaxed">{site.address}</p>
           <div className="mt-4 space-y-2 text-sm">
             <p><a className="text-[#dc2626] hover:underline font-medium flex items-center gap-2" href={`mailto:${site.email}`}>✉️ {site.email}</a></p>
-            <p><a className="text-[#dc2626] hover:underline font-medium flex items-center gap-2" href={`tel:${site.phone.replace(/\s/g, "")}`}>📞 {site.phone}</a></p>
+            <p><a className="text-[#dc2626] hover:underline font-medium flex items-center gap-2" href={`tel:${(site.phone || "").replace(/\s/g, "")}`}>📞 {site.phone}</a></p>
             <p><a className="text-[#dc2626] hover:underline font-medium flex items-center gap-2" href={`https://wa.me/${(site.phone2 || "919012403111").replace(/[^0-9]/g, "")}`} target="_blank" rel="noopener noreferrer">💬 {site.whatsappDisplay || "+91 90124 03111 (Whatsapp)"}</a></p>
           </div>
         </aside>

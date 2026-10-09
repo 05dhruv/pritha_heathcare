@@ -67,7 +67,7 @@ export default function CsrFundingPage() {
               <p className="text-slate-600 text-sm">Reach out to our CSR coordinator team directly via email or phone.</p>
               <div className="mt-3 text-sm font-medium text-slate-800 space-y-1">
                 <p>Email: <a href={`mailto:${site.email}`} className="text-[#dc2626] hover:underline">{site.email}</a></p>
-                <p>Phone: <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="text-[#dc2626] hover:underline">{site.phone}</a></p>
+                <p>Phone: <a href={`tel:${(site.phone || "").replace(/\s/g, "")}`} className="text-[#dc2626] hover:underline">{site.phone}</a></p>
               </div>
             </div>
             <Link href="/contact-us" className="btn !px-6 !py-2.5 flex-shrink-0">

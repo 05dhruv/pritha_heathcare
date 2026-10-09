@@ -356,7 +356,7 @@ export default function Footer() {
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#122336]/95 backdrop-blur-md border-t border-white/10 px-3 py-2 flex items-center justify-between gap-2 shadow-2xl sm:hidden">
         {/* Call Helpline */}
         <a
-          href={`tel:${site.phone.replace(/\s/g, "")}`}
+          href={`tel:${(site.phone || "").replace(/\s/g, "")}`}
           className="flex-1 flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 text-white text-xs font-bold transition"
         >
           <svg className="w-3.5 h-3.5 fill-current text-[#dc2626]" viewBox="0 0 24 24">
