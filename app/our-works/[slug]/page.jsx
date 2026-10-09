@@ -144,32 +144,35 @@ export default function WorkDetailsPage({ params }) {
               <div id="overview" className="scroll-mt-28">
                 {params.slug === "oracle-eye-hospital" ? (
                   <>
-                    <div className="flex flex-row items-center gap-3 mb-2">
+                    <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-[#122336] m-0">
+                      {pageHeading}
+                    </h2>
+                    <div>
                       <a
                         href="https://oracleeyehospital.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block flex-shrink-0 transition-transform hover:scale-105 hover:opacity-90"
+                        aria-label="Visit Oracle Eye Hospital website"
+                        className="partner-logo-link"
                       >
                         <img
-                          src="https://res.cloudinary.com/dv9tivfvq/image/upload/v1791185243/IMG_20261005_125549_fulyke.png"
-                          className="h-10 sm:h-12 w-auto object-contain cursor-pointer rounded"
+                          src="/images/oracle-eye-care-logo.png"
+                          alt="Oracle Eye Hospital logo"
                         />
                       </a>
-                      <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-[#122336] m-0">
-                        {pageHeading}
-                      </h2>
                     </div>
-                    <a
-                      href="https://oracleeyehospital.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block mb-5 hover:underline"
-                    >
-                      <p className="text-[#c54b8c] hover:text-[#9e3a6f] font-semibold text-sm uppercase tracking-widest transition-colors">
-                        {data.tagline}
-                      </p>
-                    </a>
+                    <div>
+                      <a
+                        href="https://oracleeyehospital.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mb-5 hover:underline"
+                      >
+                        <p className="text-[#c54b8c] hover:text-[#9e3a6f] font-semibold text-sm uppercase tracking-widest transition-colors m-0">
+                          {data.tagline}
+                        </p>
+                      </a>
+                    </div>
                   </>
                 ) : (
                   <>

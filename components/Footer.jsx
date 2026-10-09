@@ -143,7 +143,7 @@ export default function Footer() {
                   className="hover:text-white hover:translate-x-1 transition inline-flex items-center gap-2 group"
                 >
                   <span className="text-red-500 font-bold group-hover:text-red-400">&rsaquo;</span>
-                  <span>Orale Cancer Patient Realization</span>
+                  <span>oral cancer patient rehabilitation</span>
                 </Link>
               </li>
 

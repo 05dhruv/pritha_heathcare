@@ -263,3 +263,34 @@ img {
   }
 }
 
+/* Oracle Eye Hospital Partner Logo */
+.partner-logo-link {
+  display: inline-block;
+  margin: 12px 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.partner-logo-link img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.partner-logo-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.partner-logo-link:focus-visible {
+  outline: 2px solid #dc2626;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@media (max-width: 575.98px) {
+  .partner-logo-link img {
+    height: 44px;
+  }
+}
+

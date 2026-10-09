@@ -71,7 +71,7 @@ async function main() {
     { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto/WhatsApp_Image_2026-10-08_at_9.49.24_PM_1.jpg", caption: "Diagnostic Screening & Community Health Awareness" },
     { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476873/WhatsApp_Image_2026-10-08_at_9.49.07_PM.jpg", caption: "Patient Welfare & Pre-operative Consultation" },
     { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.02_PM_1.jpg", caption: "Free Cataract Surgery Selection & Medical Check" },
-    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.01_PM.jpg", caption: "Healthcare Screening Volunteers Assisting Patients" },
+    // { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.01_PM.jpg", caption: "Healthcare Screening Volunteers Assisting Patients" },
     { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.02_PM_2.jpg", caption: "Community Beneficiary Assessment and Checkup" },
     { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476870/WhatsApp_Image_2026-10-08_at_9.49.02_PM.jpg", caption: "Specialist Doctor Consultations at Village Camp" },
     { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476871/WhatsApp_Image_2026-10-08_at_9.49.03_PM.jpg", caption: "Free Distribution of Eyeglasses & Protective Frames" },

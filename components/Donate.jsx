@@ -16,7 +16,7 @@ const EMAILJS_CONFIG = {
 const UPI_ID = "pritha@indianbk";
 const PAYEE_NAME = "Pratha Healthcare";
 const PRESETS = [500, 1000, 2500, 5000];
-const CAUSES = ["For Cataract Surgery", "Eye Camp", "Tabacco Suggestion Awareness Program","Orale Cancer Patient Realization","Artificial Limbs", "For Education To Child"];
+const CAUSES = ["For Cataract Surgery", "Eye Camp", "Tabacco Suggestion Awareness Program","oral cancer patient rehabilitation","Artificial Limbs", "For Education To Child"];
 
 export default function Donate() {
   const [amount, setAmount] = useState(1000);
