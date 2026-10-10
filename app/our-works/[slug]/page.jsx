@@ -1,8 +1,10 @@
 import PageBanner from "@/components/PageBanner";
+import PhotoGrid from "@/components/PhotoGrid";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { worksData } from "../../../data/works";
 import { workItemsData } from "../../../data/workItems";
+import { pageGalleries } from "../../../data/pageGalleries";
 
 // Combine both datasets for static generation
 export async function generateStaticParams() {
@@ -93,8 +95,15 @@ export default function WorkDetailsPage({ params }) {
     });
   }
 
-  // Gallery
-  sidebarItems.push({ id: "gallery", label: "Gallery", isSubItem: false });
+  // Gallery (either custom page gallery or data.gallery)
+  const pageGallery = pageGalleries[params.slug];
+  if (pageGallery || (data.gallery && data.gallery.length > 0)) {
+    sidebarItems.push({
+      id: "photos",
+      label: pageGallery ? pageGallery.heading : "Gallery",
+      isSubItem: false,
+    });
+  }
 
   if (data.faqs && data.faqs.length > 0) {
     sidebarItems.push({
@@ -135,32 +144,35 @@ export default function WorkDetailsPage({ params }) {
               <div id="overview" className="scroll-mt-28">
                 {params.slug === "oracle-eye-hospital" ? (
                   <>
-                    <div className="flex flex-row items-center gap-3 mb-2">
+                    <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-[#122336] m-0">
+                      {pageHeading}
+                    </h2>
+                    <div>
                       <a
                         href="https://oracleeyehospital.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block flex-shrink-0 transition-transform hover:scale-105 hover:opacity-90"
+                        aria-label="Visit Oracle Eye Hospital website"
+                        className="partner-logo-link"
                       >
                         <img
-                          src="https://res.cloudinary.com/dv9tivfvq/image/upload/v1791185243/IMG_20261005_125549_fulyke.png"
-                          className="h-10 sm:h-12 w-auto object-contain cursor-pointer rounded"
+                          src="/images/oracle-eye-care-logo.png"
+                          alt="Oracle Eye Hospital logo"
                         />
                       </a>
-                      <h2 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-[#122336] m-0">
-                        {pageHeading}
-                      </h2>
                     </div>
-                    <a
-                      href="https://oracleeyehospital.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block mb-5 hover:underline"
-                    >
-                      <p className="text-[#c54b8c] hover:text-[#9e3a6f] font-semibold text-sm uppercase tracking-widest transition-colors">
-                        {data.tagline}
-                      </p>
-                    </a>
+                    <div>
+                      <a
+                        href="https://oracleeyehospital.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mb-5 hover:underline"
+                      >
+                        <p className="text-[#c54b8c] hover:text-[#9e3a6f] font-semibold text-sm uppercase tracking-widest transition-colors m-0">
+                          {data.tagline}
+                        </p>
+                      </a>
+                    </div>
                   </>
                 ) : (
                   <>
@@ -450,12 +462,19 @@ export default function WorkDetailsPage({ params }) {
                 </div>
               )}
 
-              {/* Gallery */}
-              {data.gallery && data.gallery.length > 0 && (
-                <div className="mb-8">
+              {/* Photo Section / Gallery */}
+              {pageGallery ? (
+                <PhotoGrid
+                  sectionId="photos"
+                  photos={pageGallery.photos}
+                  heading={pageGallery.heading}
+                  subheading={pageGallery.subheading}
+                />
+              ) : data.gallery && data.gallery.length > 0 ? (
+                <div id="photos" className="mb-8 scroll-mt-28">
                   <h3
                     id="gallery"
-                    className="font-display font-bold text-lg text-[#122336] uppercase tracking-wide mb-4 scroll-mt-28"
+                    className="font-display font-bold text-lg text-[#122336] uppercase tracking-wide mb-4"
                   >
                     Gallery
                   </h3>
@@ -470,7 +489,7 @@ export default function WorkDetailsPage({ params }) {
                     ))}
                   </div>
                 </div>
-              )}
+              ) : null}
 
               {/* FAQs */}
               {data.faqs && data.faqs.length > 0 && (
@@ -520,8 +539,8 @@ export default function WorkDetailsPage({ params }) {
             </article>
 
             {/* Sticky Sidebar dynamically driven by page content */}
-            <div className="order-first lg:order-last lg:self-stretch w-full lg:w-80 flex-shrink-0 lg:ml-auto">
-              <aside className="lg:sticky lg:top-28">
+            <div className="order-first lg:order-last w-full lg:w-80 flex-shrink-0 lg:ml-auto lg:self-start lg:sticky lg:top-28 z-20">
+              <aside>
                 <div className="rounded-xl border border-slate-200 bg-white shadow-md overflow-hidden">
                   <div className="bg-[#122336] px-5 py-4">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-[#dc2626] block mb-1">

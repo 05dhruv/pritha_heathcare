@@ -47,7 +47,7 @@ export default function Header() {
           {/* Contact phone links */}
           <div className="flex items-center gap-2.5 sm:gap-4 overflow-x-auto scrollbar-none whitespace-nowrap">
             <a
-              href={`tel:${site.phone.replace(/\s/g, "")}`}
+              href={`tel:${(site.phone || "").replace(/\s/g, "")}`}
               className="flex items-center gap-1.5 hover:text-[#dc2626] transition font-medium"
             >
               <svg className="w-3.5 h-3.5 fill-current text-[#dc2626] flex-shrink-0" viewBox="0 0 24 24">
@@ -276,7 +276,7 @@ export default function Header() {
                     Patient Helpline
                   </span>
                   <a
-                    href={`tel:${site.phone.replace(/\s/g, "")}`}
+                    href={`tel:${(site.phone || "").replace(/\s/g, "")}`}
                     className="font-bold text-[#122336] hover:text-[#dc2626] transition"
                   >
                     {site.phone}

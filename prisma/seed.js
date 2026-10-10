@@ -59,6 +59,48 @@ async function main() {
   if ((await prisma.notification.count()) === 0) {
     await prisma.notification.create({ data: { title: "Welcome: add public notices from the admin panel", link: "" } });
   }
+
+  const galleryData = [
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476871/WhatsApp_Image_2026-10-08_at_9.49.04_PM_1.jpg", caption: "Pratha Health Care Medical Outreach & Eye Examination Camp" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476872/WhatsApp_Image_2026-10-08_at_9.49.04_PM_2.jpg", caption: "Patient Registration and Vision Screening Session" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476872/WhatsApp_Image_2026-10-08_at_9.49.05_PM.jpg", caption: "Specialist Eye Diagnosis & Slit-lamp Examination" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476872/WhatsApp_Image_2026-10-08_at_9.49.06_PM_1.jpg", caption: "Rural Community Health Check-up Camp" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476872/WhatsApp_Image_2026-10-08_at_9.49.06_PM.jpg", caption: "Senior Citizen Vision Assessment & Care" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476872/WhatsApp_Image_2026-10-08_at_9.49.07_PM_1.jpg", caption: "Medical Camp Team & Field Staff in Action" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476873/WhatsApp_Image_2026-10-08_at_9.49.07_PM_2.jpg", caption: "Comprehensive Eye Health Screening & Consultation" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto/WhatsApp_Image_2026-10-08_at_9.49.24_PM_1.jpg", caption: "Diagnostic Screening & Community Health Awareness" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476873/WhatsApp_Image_2026-10-08_at_9.49.07_PM.jpg", caption: "Patient Welfare & Pre-operative Consultation" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.02_PM_1.jpg", caption: "Free Cataract Surgery Selection & Medical Check" },
+    // { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.01_PM.jpg", caption: "Healthcare Screening Volunteers Assisting Patients" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.02_PM_2.jpg", caption: "Community Beneficiary Assessment and Checkup" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476870/WhatsApp_Image_2026-10-08_at_9.49.02_PM.jpg", caption: "Specialist Doctor Consultations at Village Camp" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476871/WhatsApp_Image_2026-10-08_at_9.49.03_PM.jpg", caption: "Free Distribution of Eyeglasses & Protective Frames" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476872/WhatsApp_Image_2026-10-08_at_9.49.04_PM.jpg", caption: "Field Ophthalmology Team Examining Villagers" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.35_PM.jpg", caption: "Oral & General Health Screening Initiative" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476862/WhatsApp_Image_2026-10-08_at_9.48.46_PM.jpg", caption: "Preventive Healthcare & Awareness Drive" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476865/WhatsApp_Image_2026-10-08_at_9.48.55_PM.jpg", caption: "Clinical Diagnosis and Patient Guidance" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476866/WhatsApp_Image_2026-10-08_at_9.48.56_PM.jpg", caption: "Rural Outreach Medical Support Team" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476866/WhatsApp_Image_2026-10-08_at_9.48.58_PM.jpg", caption: "Doctor Advising Underprivileged Patients" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476866/WhatsApp_Image_2026-10-08_at_9.48.57_PM.jpg", caption: "Vision Acuity Testing in Rural UP" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476867/WhatsApp_Image_2026-10-08_at_9.49.00_PM.jpg", caption: "Patient Counseling and Post-Operative Guidance" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476868/WhatsApp_Image_2026-10-08_at_9.49.01_PM_1.jpg", caption: "Mobile Medical Unit & Village Diagnostic Camp" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476839/WhatsApp_Image_2026-10-08_at_9.49.23_PM.jpg", caption: "Cataract Screening and Refractive Correction" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476843/WhatsApp_Image_2026-10-08_at_9.48.17_PM.jpg", caption: "Community Gathering for Health Awareness Program" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476843/WhatsApp_Image_2026-10-08_at_9.49.22_PM_2.jpg", caption: "Elderly Patient Vision Restoration Care" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476848/WhatsApp_Image_2026-10-08_at_9.48.23_PM.jpg", caption: "Medical Mission Field Operations" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476853/WhatsApp_Image_2026-10-08_at_9.48.29_PM.jpg", caption: "Doctor Examination & Patient Consultation" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476860/WhatsApp_Image_2026-10-08_at_9.48.34_PM.jpg", caption: "Healthcare Volunteers & Screening Station" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.37_PM.jpg", caption: "Dedicated Medical Staff Providing Compassionate Care" },
+    { type: "IMAGE", url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.31_PM.jpg", caption: "Restoring the Gift of Vision to Underserved Communities" },
+  ];
+
+  for (const item of galleryData) {
+    const exists = await prisma.galleryItem.findFirst({ where: { url: item.url } });
+    if (!exists) {
+      await prisma.galleryItem.create({ data: item });
+    }
+  }
+
   console.log("Seed complete");
 }
 
