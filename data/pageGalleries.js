@@ -74,4 +74,56 @@ export const pageGalleries = {
       },
     ],
   },
+  "dental-camps": {
+    heading: "Photos from Our Dental Camps",
+    subheading: "Providing comprehensive oral health check-ups, dental hygiene awareness, and preventive care across communities.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476758/WhatsApp_Image_2026-10-08_at_9.49.11_PM_1.jpg",
+        alt: "Free Dental Checkup and Oral Health Screening Camp",
+        caption: "Specialist Oral Health Screening & Dental Examination",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476769/WhatsApp_Image_2026-10-08_at_9.49.12_PM.jpg",
+        alt: "Dental Consultation and Patient Care at Rural Outreach Camp",
+        caption: "Dental Consultation & Preventive Oral Hygiene Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476790/WhatsApp_Image_2026-10-08_at_9.49.15_PM_1.jpg",
+        alt: "Volunteer Dentists and Clinical Care Team Assisting Patients",
+        caption: "Dental Team Providing On-Site Clinical Checkup",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.02_PM_1.jpg",
+        alt: "Community Dental Awareness and Screening Initiative",
+        caption: "Community Dental Health & Hygiene Screening Drive",
+      },
+    ],
+  },
+  "dental-camp": {
+    heading: "Photos from Our Dental Camps",
+    subheading: "Providing comprehensive oral health check-ups, dental hygiene awareness, and preventive care across communities.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476758/WhatsApp_Image_2026-10-08_at_9.49.11_PM_1.jpg",
+        alt: "Free Dental Checkup and Oral Health Screening Camp",
+        caption: "Specialist Oral Health Screening & Dental Examination",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476769/WhatsApp_Image_2026-10-08_at_9.49.12_PM.jpg",
+        alt: "Dental Consultation and Patient Care at Rural Outreach Camp",
+        caption: "Dental Consultation & Preventive Oral Hygiene Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476790/WhatsApp_Image_2026-10-08_at_9.49.15_PM_1.jpg",
+        alt: "Volunteer Dentists and Clinical Care Team Assisting Patients",
+        caption: "Dental Team Providing On-Site Clinical Checkup",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476869/WhatsApp_Image_2026-10-08_at_9.49.02_PM_1.jpg",
+        alt: "Community Dental Awareness and Screening Initiative",
+        caption: "Community Dental Health & Hygiene Screening Drive",
+      },
+    ],
+  },
 };

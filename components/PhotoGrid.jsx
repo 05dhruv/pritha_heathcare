@@ -48,12 +48,12 @@ export default function PhotoGrid({
     };
 
     window.addEventListener("keydown", handleKeyDown);
-    const originalOverflow = document.body.style.overflow;
+    const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = originalOverflow || "auto";
+      document.body.style.overflow = prevOverflow || "";
     };
   }, [lightboxIndex, handleClose, handlePrev, handleNext]);
 
@@ -153,29 +153,6 @@ export default function PhotoGrid({
             </div>
 
             <div className="flex items-center gap-2">
-              <a
-                href={activePhoto.src}
-                target="_blank"
-                rel="noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors"
-                title="Open full resolution in new tab"
-                aria-label="Open full resolution image in a new tab"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-
               <button
                 type="button"
                 onClick={handleClose}

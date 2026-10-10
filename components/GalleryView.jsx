@@ -55,11 +55,12 @@ export default function GalleryView({ initialItems = [] }) {
 
     window.addEventListener("keydown", handleKeyDown);
     // Prevent body scrolling while modal is open
+    const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = prevOverflow || "";
     };
   }, [lightboxIndex, handleClose, handlePrev, handleNext]);
 
@@ -194,28 +195,6 @@ export default function GalleryView({ initialItems = [] }) {
             </div>
 
             <div className="flex items-center gap-2">
-              <a
-                href={activeItem.url}
-                target="_blank"
-                rel="noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors"
-                title="Open full resolution in new tab"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-
               <button
                 onClick={handleClose}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white hover:bg-[#dc2626] transition-colors"
