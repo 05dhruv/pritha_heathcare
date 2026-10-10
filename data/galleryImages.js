@@ -260,4 +260,79 @@ export const galleryImages = [{
     caption: "Doctor & Patient Consultation",
     category: "Clinical Care",
 },
+// Tobacco Suggestion & Awareness Program Images
+{
+    id: "phc-tobacco-1",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476754/WhatsApp_Image_2026-10-08_at_9.49.10_PM.jpg",
+    caption: "Tobacco Cessation Counseling & Health Guidance",
+    category: "Tobacco Awareness",
+},
+{
+    id: "phc-tobacco-2",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476759/WhatsApp_Image_2026-10-08_at_9.49.09_PM.jpg",
+    caption: "Community Tobacco Awareness Drive & Interactive Session",
+    category: "Tobacco Awareness",
+},
+{
+    id: "phc-tobacco-3",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476763/WhatsApp_Image_2026-10-08_at_9.49.12_PM_1.jpg",
+    caption: "Preventive Education and Youth Anti-Tobacco Campaign",
+    category: "Tobacco Awareness",
+},
+{
+    id: "phc-tobacco-4",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476778/WhatsApp_Image_2026-10-08_at_9.49.14_PM_1.jpg",
+    caption: "Tobacco De-Addiction Outreach & Health Assessment",
+    category: "Tobacco Awareness",
+},
+// Oral Cancer Surgery & Screening Images
+{
+    id: "phc-oral-cancer-1",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.45_PM.jpg",
+    caption: "Oral Cavity Screening and Lesion Examination",
+    category: "Cancer Screening",
+},
+{
+    id: "phc-oral-cancer-2",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.32_PM.jpg",
+    caption: "Pre-Surgical Consultation and Patient Oncology Triage",
+    category: "Cancer Screening",
+},
+{
+    id: "phc-oral-cancer-3",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.35_PM.jpg",
+    caption: "Clinical Diagnosis and Patient Rehabilitation Guidance",
+    category: "Cancer Screening",
+},
+{
+    id: "phc-oral-cancer-4",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791476675/WhatsApp_Image_2026-10-08_at_9.49.27_PM_1.jpg",
+    caption: "Surgical Medical Team and Patient Care Navigation",
+    category: "Cancer Screening",
+},
+// Health Checkup & Health Talk Webinar Images
+{
+    id: "phc-health-talk-1",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.23_AM_1.jpg",
+    caption: "General Health Diagnostic & Vital Signs Screening",
+    category: "Health Talks & Webinars",
+},
+{
+    id: "phc-health-talk-2",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.22_AM.jpg",
+    caption: "Physician Consultation and Community Health Examination",
+    category: "Health Talks & Webinars",
+},
+{
+    id: "phc-health-talk-3",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.23_AM.jpg",
+    caption: "Health Awareness Talk and Preventive Webinar Presentation",
+    category: "Health Talks & Webinars",
+},
+{
+    id: "phc-health-talk-4",
+    url: "https://res.cloudinary.com/ccfnrpqo/image/upload/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.22_AM_1.jpg",
+    caption: "Community Wellness Session and Patient Medication Distribution",
+    category: "Health Talks & Webinars",
+},
 ];

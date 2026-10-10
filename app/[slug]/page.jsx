@@ -4,6 +4,9 @@ import PageBanner from "@/components/PageBanner";
 import Photo from "@/components/Photo";
 import { services } from "@/lib/site";
 
+import { pageGalleries } from "@/data/pageGalleries";
+import PhotoGrid from "@/components/PhotoGrid";
+
 export function generateStaticParams() {
   return Object.keys(services).map((slug) => ({ slug }));
 }
@@ -17,6 +20,9 @@ export function generateMetadata({ params }) {
 export default function ServicePage({ params }) {
   const s = services[params.slug];
   if (!s) notFound();
+
+  const pageGallery = pageGalleries[params.slug];
+
   return (
     <>
       <PageBanner title={s.title} parent="Our Services" />
@@ -39,6 +45,16 @@ export default function ServicePage({ params }) {
           <Link href="/donate" className="btn mt-6 w-full">Support this work</Link>
         </aside>
       </section>
+
+      {pageGallery && (
+        <section className="container-x pb-16">
+          <PhotoGrid
+            photos={pageGallery.photos}
+            heading={pageGallery.heading}
+            subheading={pageGallery.subheading}
+          />
+        </section>
+      )}
     </>
   );
 }

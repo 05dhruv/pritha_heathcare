@@ -97,6 +97,7 @@ export default function CorePillarsCarousel() {
     loop: true,
     align: "start",
     slidesToScroll: 1,
+    duration: 35,
   });
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -130,12 +131,12 @@ export default function CorePillarsCarousel() {
     emblaApi.on("reInit", onSelect);
   }, [emblaApi, onSelect]);
 
-  // Autoplay with pause on hover
+  // Autoplay sliding right-to-left
   useEffect(() => {
     if (!emblaApi || paused) return;
     const timer = setInterval(() => {
       emblaApi.scrollNext();
-    }, 3200);
+    }, 2800);
 
     return () => clearInterval(timer);
   }, [emblaApi, paused]);

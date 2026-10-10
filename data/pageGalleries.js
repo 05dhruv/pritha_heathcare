@@ -126,4 +126,238 @@ export const pageGalleries = {
       },
     ],
   },
+  "tobacco-awareness": {
+    heading: "Photos from Tobacco Suggestion & Awareness Programs",
+    subheading: "Grassroots awareness drives, habit cessation counseling, and youth de-addiction initiatives across communities.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476754/WhatsApp_Image_2026-10-08_at_9.49.10_PM.jpg",
+        alt: "Tobacco Cessation Counseling & Health Guidance Session",
+        caption: "Tobacco Cessation Counseling & Health Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476759/WhatsApp_Image_2026-10-08_at_9.49.09_PM.jpg",
+        alt: "Community Tobacco Awareness Drive & Interactive Session",
+        caption: "Community Awareness Drive on Tobacco Hazards",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476763/WhatsApp_Image_2026-10-08_at_9.49.12_PM_1.jpg",
+        alt: "Preventive Education and Youth Anti-Tobacco Campaign",
+        caption: "Youth Preventive Education & Habit Counseling",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476778/WhatsApp_Image_2026-10-08_at_9.49.14_PM_1.jpg",
+        alt: "Tobacco De-Addiction Outreach & Health Assessment",
+        caption: "De-Addiction Guidance & Community Health Assessment",
+      },
+    ],
+  },
+  "tobacco-suggestion-programs": {
+    heading: "Photos from Tobacco Suggestion & Awareness Programs",
+    subheading: "Grassroots awareness drives, habit cessation counseling, and youth de-addiction initiatives across communities.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476754/WhatsApp_Image_2026-10-08_at_9.49.10_PM.jpg",
+        alt: "Tobacco Cessation Counseling & Health Guidance Session",
+        caption: "Tobacco Cessation Counseling & Health Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476759/WhatsApp_Image_2026-10-08_at_9.49.09_PM.jpg",
+        alt: "Community Tobacco Awareness Drive & Interactive Session",
+        caption: "Community Awareness Drive on Tobacco Hazards",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476763/WhatsApp_Image_2026-10-08_at_9.49.12_PM_1.jpg",
+        alt: "Preventive Education and Youth Anti-Tobacco Campaign",
+        caption: "Youth Preventive Education & Habit Counseling",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476778/WhatsApp_Image_2026-10-08_at_9.49.14_PM_1.jpg",
+        alt: "Tobacco De-Addiction Outreach & Health Assessment",
+        caption: "De-Addiction Guidance & Community Health Assessment",
+      },
+    ],
+  },
+  "oral-cancer-surgery": {
+    heading: "Photos from Oral Cancer Screening & Surgical Care",
+    subheading: "Early oncological screening, clinical diagnosis, surgical triage, and rehabilitation for patients in need.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.45_PM.jpg",
+        alt: "Oral Cavity Screening and Lesion Examination Session",
+        caption: "Specialist Oral Cavity & Lesion Examination",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.32_PM.jpg",
+        alt: "Pre-Surgical Consultation and Patient Oncology Triage",
+        caption: "Oncological Consultation & Surgical Care Triage",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.35_PM.jpg",
+        alt: "Clinical Diagnosis and Patient Rehabilitation Guidance",
+        caption: "Clinical Staging & Post-Surgical Care Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476675/WhatsApp_Image_2026-10-08_at_9.49.27_PM_1.jpg",
+        alt: "Surgical Medical Team and Patient Care Navigation",
+        caption: "Surgical Intervention & Patient Care Navigation",
+      },
+    ],
+  },
+  "cancer-screening-camps": {
+    heading: "Photos from Oral Cancer Screening & Surgical Care",
+    subheading: "Early oncological screening, clinical diagnosis, surgical triage, and rehabilitation for patients in need.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.45_PM.jpg",
+        alt: "Oral Cavity Screening and Lesion Examination Session",
+        caption: "Specialist Oral Cavity & Lesion Examination",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.32_PM.jpg",
+        alt: "Pre-Surgical Consultation and Patient Oncology Triage",
+        caption: "Oncological Consultation & Surgical Care Triage",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.35_PM.jpg",
+        alt: "Clinical Diagnosis and Patient Rehabilitation Guidance",
+        caption: "Clinical Staging & Post-Surgical Care Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476675/WhatsApp_Image_2026-10-08_at_9.49.27_PM_1.jpg",
+        alt: "Surgical Medical Team and Patient Care Navigation",
+        caption: "Surgical Intervention & Patient Care Navigation",
+      },
+    ],
+  },
+  "cancer-screening": {
+    heading: "Photos from Oral Cancer Screening & Surgical Care",
+    subheading: "Early oncological screening, clinical diagnosis, surgical triage, and rehabilitation for patients in need.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.45_PM.jpg",
+        alt: "Oral Cavity Screening and Lesion Examination Session",
+        caption: "Specialist Oral Cavity & Lesion Examination",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.32_PM.jpg",
+        alt: "Pre-Surgical Consultation and Patient Oncology Triage",
+        caption: "Oncological Consultation & Surgical Care Triage",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476861/WhatsApp_Image_2026-10-08_at_9.48.35_PM.jpg",
+        alt: "Clinical Diagnosis and Patient Rehabilitation Guidance",
+        caption: "Clinical Staging & Post-Surgical Care Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791476675/WhatsApp_Image_2026-10-08_at_9.49.27_PM_1.jpg",
+        alt: "Surgical Medical Team and Patient Care Navigation",
+        caption: "Surgical Intervention & Patient Care Navigation",
+      },
+    ],
+  },
+  "general-health-checkup": {
+    heading: "Photos from Health Checkup Camps & Webinars",
+    subheading: "General health diagnostics, physician consultations, and digital health talks for community wellness.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.23_AM_1.jpg",
+        alt: "General Health Checkup & Diagnostic Vitals Screening Session",
+        caption: "General Health Diagnostic & Vital Signs Screening",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.22_AM.jpg",
+        alt: "Physician Consultation and Community Health Examination",
+        caption: "Doctor Consultation & Community Health Checkup",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.23_AM.jpg",
+        alt: "Health Awareness Talk and Preventive Webinar Presentation",
+        caption: "Health Awareness Session & Preventive Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.22_AM_1.jpg",
+        alt: "Community Wellness Session and Patient Medication Distribution",
+        caption: "Patient Welfare, Medicine Guidance & Support",
+      },
+    ],
+  },
+  "community-health-camps": {
+    heading: "Photos from Community Health Camps",
+    subheading: "General health diagnostics, physician consultations, and clinical wellness drives across villages.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.23_AM_1.jpg",
+        alt: "General Health Checkup & Diagnostic Vitals Screening Session",
+        caption: "General Health Diagnostic & Vital Signs Screening",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.22_AM.jpg",
+        alt: "Physician Consultation and Community Health Examination",
+        caption: "Doctor Consultation & Community Health Checkup",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.23_AM.jpg",
+        alt: "Health Awareness Talk and Preventive Webinar Presentation",
+        caption: "Health Awareness Session & Preventive Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.22_AM_1.jpg",
+        alt: "Community Wellness Session and Patient Medication Distribution",
+        caption: "Patient Welfare, Medicine Guidance & Support",
+      },
+    ],
+  },
+  "oracle-camp": {
+    heading: "Photos from Health Checkup Camps & Webinars",
+    subheading: "General health diagnostics, physician consultations, and digital health talks for community wellness.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.23_AM_1.jpg",
+        alt: "General Health Checkup & Diagnostic Vitals Screening Session",
+        caption: "General Health Diagnostic & Vital Signs Screening",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.22_AM.jpg",
+        alt: "Physician Consultation and Community Health Examination",
+        caption: "Doctor Consultation & Community Health Checkup",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.23_AM.jpg",
+        alt: "Health Awareness Talk and Preventive Webinar Presentation",
+        caption: "Health Awareness Session & Preventive Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.22_AM_1.jpg",
+        alt: "Community Wellness Session and Patient Medication Distribution",
+        caption: "Patient Welfare, Medicine Guidance & Support",
+      },
+    ],
+  },
+  "health-talks-webinars": {
+    heading: "Photos from Health Talks & Webinars",
+    subheading: "Digital prevention webinars, medical specialist talks, and interactive health guidance.",
+    photos: [
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.23_AM_1.jpg",
+        alt: "General Health Checkup & Diagnostic Vitals Screening Session",
+        caption: "General Health Diagnostic & Vital Signs Screening",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.22_AM.jpg",
+        alt: "Physician Consultation and Community Health Examination",
+        caption: "Doctor Consultation & Community Health Checkup",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613910/WhatsApp_Image_2026-10-10_at_11.59.23_AM.jpg",
+        alt: "Health Awareness Talk and Preventive Webinar Presentation",
+        caption: "Health Awareness Session & Preventive Guidance",
+      },
+      {
+        src: "https://res.cloudinary.com/ccfnrpqo/image/upload/f_auto,q_auto,w_800/v1791613909/WhatsApp_Image_2026-10-10_at_11.59.22_AM_1.jpg",
+        alt: "Community Wellness Session and Patient Medication Distribution",
+        caption: "Patient Welfare, Medicine Guidance & Support",
+      },
+    ],
+  },
 };
