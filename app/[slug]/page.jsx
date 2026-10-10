@@ -7,7 +7,7 @@ import { services } from "@/lib/site";
 export function generateStaticParams() {
   return Object.keys(services).map((slug) => ({ slug }));
 }
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateMetadata({ params }) {
   const s = services[params.slug];

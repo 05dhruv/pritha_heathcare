@@ -307,7 +307,34 @@ export const workItemsData = {
         extra: [
             { title: "Screen Fatigue & Dry Eyes", desc: "Learn practical tips and the 20-20-20 rule to protect your eyes during long working hours." },
             { title: "Children's Vision", desc: "Understand the importance of early eye check-ups and identifying signs of myopia in kids." },
-            { title: "Nutrition for Eye Health", desc: "Discover which foods and vitamins naturally support long-term vision preservation." }
+            { title: "Nutrition for Eye Health", desc: "Discover which practical foods and vitamins naturally support long-term vision preservation." }
+        ]
+    },
+    "oral-cancer-surgery": {
+        slug: "oral-cancer-surgery",
+        menuLabel: "Oral Cancer Surgery",
+        title: "Oral Cancer Surgery & Rehabilitation",
+        tagline: "Timely Surgical Intervention & Compassionate Rehabilitation",
+        intro: "Oral cancer is one of the most severe health challenges faced by underserved communities due to widespread habit patterns. Early detection and immediate surgical intervention are critical to saving lives and restoring function.\n\nPritha Health Care facilitates comprehensive oral cancer screening, surgical triage, hospital navigation, and complete post-operative rehabilitation for vulnerable patients who cannot afford specialized oncological care.",
+        stat: { value: "47+", label: "Cancer Camps & Surgical Navigation" },
+        partner: null,
+        offers: [
+            "Comprehensive oral lesion & oncological check-up",
+            "Biopsy coordination & diagnostic triage",
+            "Surgical intervention facilitation with partner oncologists",
+            "Post-operative wound care and medication guidance",
+            "Nutritional, speech, and swallowing rehabilitation support"
+        ],
+        howItWorks: [
+            "Screening: Oral cavity check-up during camps or clinical visits.",
+            "Biopsy & Triage: Suspected lesions are tested for histopathological staging.",
+            "Surgical Care: Eligible patients are navigated to oncological surgical facilities.",
+            "Rehabilitation: Speech therapy, soft diet counseling, and post-op recovery monitoring."
+        ],
+        whoCanJoin: "Individuals suffering from non-healing oral ulcers, white/red patches (leukoplakia/erythroplakia), difficulty opening mouth, or confirmed oral malignancies requiring surgical intervention and support.",
+        faqs: [
+            { question: "How is oral cancer identified in the initial stage?", answer: "During check-ups, doctors look for non-healing mouth ulcers, red or white patches, oral submucous fibrosis (difficulty opening mouth), or unexplained neck swellings." },
+            { question: "What post-operative support is provided?", answer: "We support patients with post-surgery rehabilitation, nutritional guidance for eating and swallowing, speech therapy assistance, and regular recovery follow-ups." }
         ]
     }
 };

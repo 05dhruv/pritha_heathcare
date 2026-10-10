@@ -36,7 +36,7 @@ const pillars = [
       "Post-Fitting Physiotherapy Support",
     ],
     checkColor: "text-blue-600",
-    link: "/disability-care",
+    link: "/artificial-limbs-rehabilitation",
     linkText: "Rehabilitation Center",
   },
   {
@@ -53,7 +53,7 @@ const pillars = [
       "Oral Cancer & Chronic Health Screenings",
     ],
     checkColor: "text-purple-600",
-    link: "/outreach-services",
+    link: "/rural-mobile-medical-clinics",
     linkText: "Explore Rural Health Van",
   },
   {
@@ -70,11 +70,11 @@ const pillars = [
       "Preventive Education & Health Talks",
     ],
     checkColor: "text-amber-600",
-    link: "/our-works/tobacco-awareness",
+    link: "/tobacco-suggestion-programs",
     linkText: "Explore Tobacco Programs",
   },
   {
-    title: "Oral Cancer Screening",
+    title: "Oral Cancer Surgery",
     badge: "47+ Cancer Screening Camps",
     badgeBg: "bg-rose-50 text-rose-700 border-rose-200/60",
     dotColor: "bg-rose-500",
@@ -87,8 +87,8 @@ const pillars = [
       "Oncological Referral & Care Navigation",
     ],
     checkColor: "text-rose-600",
-    link: "/our-works/cancer-screening-camps",
-    linkText: "Explore Cancer Screening",
+    link: "/oral-cancer-surgery",
+    linkText: "Explore Cancer Surgery & Care",
   },
 ];
 
