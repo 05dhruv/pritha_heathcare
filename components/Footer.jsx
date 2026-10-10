@@ -247,8 +247,30 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <span className="text-red-500 text-base mt-0.5">📞</span>
                 <div>
-                  <p className="text-slate-200 font-semibold">Support Desk:</p>
-                  <p className="text-slate-400 text-xs">{site.phone} / {site.phone2}</p>
+                  <p className="text-slate-200 font-semibold mb-1">Support Desk:</p>
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs">
+                    <a
+                      href={`tel:${site.phone.replace(/[^0-9+]/g, "")}`}
+                      className="text-slate-400 hover:text-white transition inline-flex items-center gap-1 font-medium group"
+                      title="Call Helpline"
+                    >
+                      <span>{site.phone}</span>
+                    </a>
+                    <span className="text-slate-600">/</span>
+                    <a
+                      href={`https://wa.me/${(site.whatsapp || site.phone2 || "").replace(/[^0-9]/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-400 hover:text-emerald-400 transition inline-flex items-center gap-1 font-medium group"
+                      title="Chat on WhatsApp"
+                    >
+                      <span className="text-emerald-400">💬</span>
+                      <span>{site.whatsapp || site.phone2}</span>
+                      <span className="text-[10px] bg-emerald-500/15 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-500/30">
+                        WhatsApp
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
