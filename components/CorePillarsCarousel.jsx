@@ -216,30 +216,6 @@ export default function CorePillarsCarousel() {
         </div>
       </div>
 
-      {/* Navigation Controls: Arrows & Dots */}
-      <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Swiper Status / Pause Indicator */}
-        <div className="text-xs font-semibold text-slate-500 flex items-center gap-2">
-          <span className={`h-2 w-2 rounded-full ${paused ? "bg-amber-400 animate-pulse" : "bg-emerald-500"}`} />
-          <span>{paused ? "Paused on hover" : "Auto-swiping enabled"}</span>
-        </div>
-
-        {/* Pagination Dots */}
-        <div className="flex items-center gap-2">
-          {scrollSnaps.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollTo(index)}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
-                index === selectedIndex
-                  ? "w-8 bg-[#dc2626]"
-                  : "w-2.5 bg-slate-300 hover:bg-slate-400"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
         {/* Prev / Next Arrows */}
         <div className="flex items-center gap-2">
           <button
@@ -262,6 +238,5 @@ export default function CorePillarsCarousel() {
           </button>
         </div>
       </div>
-    </div>
   );
 }
